@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAlCULATOR</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <center>
+        <div class="cal">
+            <h1>CALCULATOR</h1>
+            <table>
+                <tr>
+                    <td colspan="4">
+                        <input type="text" id="screen" name="screen">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <button id="AC" class="button clear" value="AC" onclick="clearScreen()" >AC</button>
+                    </td>
+                    <td>
+                        <button id="/" class="num2 button oprater " value="/"  onclick="buttonClick(value)">/</button>
+                    </td>
+                    <td>
+                        <button id="*" class="num2 button oprater" value="*"  onclick="buttonClick(value)">×</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button id="7" class="num button number" value="7"  onclick="buttonClick(value)">7</button>
+                    </td>
+                    <td>
+                        <button id="8" class="num button number" value="8"  onclick="buttonClick(value)">8</button>
+                    </td>
+                    <td>
+                        <button id="9" class="num button number" value="9"  onclick="buttonClick(value)">9</button>
+                    </td>
+                    <td>
+                        <button class="num2 button oprater" value="-"  onclick="buttonClick(value)">-</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button id="4" class="num button number" value="4"  onclick="buttonClick(value)">4</button>
+                    </td>
+                    <td>
+                        <button id="5" class="num button number" value="5"  onclick="buttonClick(value)">5</button>
+                    </td>
+                    <td>
+                        <button id="6" class="num button number" value="6"  onclick="buttonClick(value)">6</button>
+                    </td>
+                    <td>
+                        <button id="+" class="num2 button oprater" value="+"  onclick="buttonClick(value)">+</button>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>
+                        <button id="1" class="num button number" value="1"  onclick="buttonClick(value)">1</button>
+                    </td>
+                    <td>
+                        <button id="2" class="num button number" value="2"  onclick="buttonClick(value)">2</button>
+                    </td>
+                    <td>
+                        <button id="3" class="num button number" value="3"  onclick="buttonClick(value)">3</button>
+                    </td>
+                    <td rowspan="2">
+                        <button id="equal" class="button result" value="=" onclick="findResult()">=</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <button id="zero" class="num button number" value="0"  onclick="buttonClick(value)">0</button>
+                    </td>
+                    <td>
+                        <button class="num button oprater" value="."  onclick="buttonClick(value)">.</button>
+                    </td>
+                </tr>
+            </table>
+    </center>
+    </div>
+   
+    <script src="script.js"></script>
+</body>
+
+</html>
